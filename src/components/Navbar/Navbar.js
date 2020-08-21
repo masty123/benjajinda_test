@@ -25,19 +25,6 @@ class Navbar extends Component {
                     <i className={this.state.clicked ?  'fas fa-times' : 'fas fa-bars'}></i>
                 </div>
 
-                {/* Content */}
-                {/* <ul className={this.state.clicked? 'nav-menu active' : 'nav-menu'}>
-                    {MenuItems.map((item, index) => {
-                        return (
-                            <li key={index}> 
-                                <a className={item.cName} href={item.url}>
-                                    {item.title}
-                                </a>
-                            </li>
-                        )
-                    })}
-                </ul> */}
-
                 <div className="right-menu">
                     <Button outline color="primary" className="infraButton"> Go To Maxi Infra </Button>{' '}
                     <i className="far fa-bell notification-icon"></i>
