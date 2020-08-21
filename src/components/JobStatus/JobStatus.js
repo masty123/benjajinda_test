@@ -2,28 +2,25 @@ import React, { Component} from 'react';
 // import { MenuItems } from "./MenuItems";
 import {Button} from 'reactstrap';
 import './JobStatus.css';
+import {
+    Tab,
+    Tabs,
+    TabList,
+    TabPanel,
+    AppBar
+} from 'react-tabs';
+import 'react-tabs/style/react-tabs.css';
 
 
 class JobStatus extends Component {
     
-    openCity(evt, cityName) {
-        var i, tabcontent, tablinks;
-        tabcontent = document.getElementsByClassName("tabcontent");
-        for (i = 0; i < tabcontent.length; i++) {
-            tabcontent[i].style.display = "none";
-        }
-        tablinks = document.getElementsByClassName("tablinks");
-        for (i = 0; i < tablinks.length; i++) {
-            tablinks[i].className = tablinks[i].className.replace(" active", "");
-        }
-        document.getElementById(cityName).style.display = "block";
-        evt.currentTarget.className += " active";
-    }
+
 
     render() {
         return (
             
             <div className="jobstatuscontainer">
+
                    <div className="statuscontainer">
                         <ul className="progressbar">
                             <li className="active">
@@ -186,33 +183,62 @@ class JobStatus extends Component {
                         </div>
                     </div>
 
-                    <div class="tab">
-                        <button class="tablinks" onClick={() => this.openCity(evt, 'Info')}>รายละเอียดลูกค้า</button>
-                        <button class="tablinks" onClick={() => this.openCity(evt, 'Install')}>รายละเอียดการติดตั้ง</button>
-                        <button class="tablinks" onClick={() => this.openCity(evt, 'Network')}>รายละเอียด Network</button>
-                        <button class="tablinks" onClick={() => this.openCity(evt, 'Check')}>ตรวจรับงาน</button>
+                     <Tabs className="tab">
+                        <TabList className="tabList">
+                            <Tab className="tabtitle">รายละเอียดลูกค้า</Tab>          
+                            <Tab className="tabtitle">รายละเอียดการติดตั้ง</Tab>
+                            <Tab className="tabtitle">รายละเอียด Network</Tab>
+                            <Tab className="tabtitle">ตรวจรับงาน</Tab>
+                        </TabList>
 
-                    </div>
+                        <TabPanel>
+                            <h2>Dunno About the Detail...</h2>
+                        </TabPanel>
 
-                    <div id="Info" class="tabcontent">
-                        <h3>London</h3>
-                        <p>London is the capital city of England.</p>
-                    </div>
+                        <TabPanel>
+                           <h2>This one too</h2>
+                        </TabPanel>
 
-                    <div id="Install" class="tabcontent">
-                        <h3>Paris</h3>
-                        <p>Paris is the capital of France.</p> 
-                    </div>
 
-                    <div id="Network" class="tabcontent">
-                        <h3>Tokyo</h3>
-                        <p>Tokyo is the capital of Japan.</p>
-                    </div>
+                        <TabPanel>
+                           <p className="tab-3-title">Job - Network Address - Link Details</p>
 
-                    <div id="Check" class="tabcontent">
-                        <h3>Pee Pee Island</h3>
-                        <p>Bruh</p>
-                    </div>
+                           <div className="config-icon">
+
+                               {/* Left Side */}
+                                <div className="config-start">
+                                    <div className="config-left">
+                                        <p>Config ต้นทาง</p>
+                                    </div>
+                                    <div className="config-right">
+                                        <p> </p>
+                                    </div>
+                                </div>
+
+                                {/* Line Thingy */}
+                                <div className="connection-line">
+                                     <p>*-----*</p>
+                                </div>
+
+                                 {/* Right Side */}
+                                 <div className="config-final">
+                                        <div className="config-left">
+                                            <p>Config ปลายทาง</p>
+                                        </div>
+                                        <div className="config-right">
+                                            <p>MPLS</p>
+                                        </div>
+                                 </div>
+                           </div>
+                        </TabPanel>
+
+                        <TabPanel>
+                           <h2>...</h2>
+                        </TabPanel>
+                    </Tabs>
+
+
+                    
             </div>
 
         )
