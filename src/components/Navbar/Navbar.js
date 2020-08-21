@@ -1,6 +1,6 @@
 import React, { Component} from 'react';
-import { MenuItems } from "./MenuItems";
-import { Button } from "../Button" 
+// import { MenuItems } from "./MenuItems";
+import {Button} from 'reactstrap';
 import './Navbar.css';
 
 class Navbar extends Component {
@@ -21,7 +21,7 @@ class Navbar extends Component {
                 <h1 className="page-description">INSTALLATION</h1>
                 
                 {/* bar */}
-                <div className="menu-icon" onCLick={this.handleClick}>
+                <div className="menu-icon" onClick={this.handleClick}>
                     <i className={this.state.clicked ?  'fas fa-times' : 'fas fa-bars'}></i>
                 </div>
 
@@ -37,8 +37,9 @@ class Navbar extends Component {
                         )
                     })}
                 </ul> */}
+
                 <div className="right-menu">
-                    <Button>Go To Maxi Infra</Button>
+                    <Button outline color="primary" className="infraButton"> Go To Maxi Infra </Button>{' '}
                     <i className="far fa-bell notification-icon"></i>
                     
                     <div class="dropdown-user">
@@ -54,6 +55,7 @@ class Navbar extends Component {
                         <p>TH</p>
                         </div>
                     </div>
+                    
                 </div>
         
             </nav>

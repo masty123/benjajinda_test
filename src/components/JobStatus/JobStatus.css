@@ -1,0 +1,144 @@
+body {
+    color: rgb(0, 39, 148);
+}
+
+.statuscontainer {
+    width: 70%;
+    height: 250px;
+    margin: 1.5rem;
+    margin-left: 7.5rem auto;
+    border: 4px solid #148e14;
+
+}
+
+.progressbar ul {
+}
+
+.progressbar li {
+    margin: 1rem;
+    margin-left: 2rem;
+    list-style-type: none;
+    float: left;
+    width: 14%;
+    position: relative;
+    text-align: center;
+}
+
+.icon {
+    font-size: 2rem;
+    padding-left: 0.70rem; 
+    margin: 2rem;
+}
+
+.iconStatus {
+    background-color: #ccc;
+    width: 25px;
+    height: 25px;
+    color: #fff;
+    border-radius: 50%;
+    padding-top: 0.3rem;
+    margin: 1rem;
+    margin-left: 1.5rem;
+}
+
+ul li {
+
+}
+
+
+
+
+ul li .iconStatus::after {
+    content: '';
+    background: rgb(136, 136, 136);
+    height: 5px;
+    width: 190px;
+    display: block;
+    position: absolute; 
+    left: 0;  
+    top: 120px;
+    z-index: -1;
+}
+
+ul li:nth-child(3) .iconStatus {
+    background-color: #ffb710;
+} 
+
+ul li:nth-child(3) .iconStatus::after {
+    background-color: #148e14;
+}
+
+ul li:nth-child(1) .iconStatus,
+ul li:nth-child(2) .iconStatus {
+    background-color: #60aa97;
+}
+
+ul li:nth-child(1) .iconStatus::after,
+ul li:nth-child(2) .iconStatus::after{
+    background-color: #60aa97;
+}
+
+
+
+/* 
+
+.job-status-container {   
+    width: 70%;
+    margin-left: 5rem;
+    background-color: teal;
+    padding-top: 4rem;
+}
+
+.progressbar {
+    padding: 1rem;
+    counter-reset: step;
+}
+
+.progressbar li {
+    list-style-type: none;
+    float: left;
+    width: 15%;
+    position: relative;
+    text-align: center;
+}
+
+.progressbar li::before{
+    content: counter(step);
+    counter-increment: step;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid #ddd;
+    display: block;
+    margin: 0 auto 10px auto; 
+    text-align: center;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.progressbar li::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    top: 15px;
+    left: -50%;
+    background-color: #000000;
+    z-index: -1;
+}
+
+.progressbar li:first-child::after{
+    content: none;
+}
+
+.progressbar li.active {
+    color:  green;
+}
+
+.progressbar li.active:before {
+    border-color: green;
+}
+
+.progressbar li.active + li:after {
+    background-color: green;
+} */
