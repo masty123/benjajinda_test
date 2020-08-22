@@ -1,5 +1,6 @@
 body {
     color: rgb(0, 39, 148);
+    resize: none;
 }
 
 
@@ -189,17 +190,12 @@ ul li:nth-child(2) .iconStatus::after{
 }
 
 .order-type-section {
-    /* float: left; */
-    /* font-size: 0.5rem; */
-    /* width: 100%; */
-    /* display: inline-block; */
     margin: 1rem 0.8rem 0.25rem 0.4rem;
     border-bottom: 1px solid rgb(194, 193, 193);
 }
 
 .order-type-section p {
-    /* float: left; */
-    /* padding-left: 0.6rem; */
+
 }
 
 .order-type,
@@ -237,7 +233,7 @@ ul li:nth-child(2) .iconStatus::after{
     height: auto;
     float:left;
     /* border: 5px solid lime;  */
-    margin: 5px 5px 5px 5px;
+    margin: -40px 5px 5px 5px;
     overflow: hidden;
     font-size: 0.5rem;
     border-bottom: 1px solid rgb(182, 182, 182);
@@ -264,6 +260,7 @@ ul li:nth-child(2) .iconStatus::after{
   min-width: 400px;
   height:auto;
   overflow: hidden;
+  margin-bottom: 1rem;
 }
 
 .content-table thead tr {
@@ -278,20 +275,20 @@ ul li:nth-child(2) .iconStatus::after{
     padding-bottom: 1rem;
 }
 
-/* .table-div {
-    height: 600px;
-} */
+ .table-div {
+    height: auto;
+} 
 
 
 
 
 .leftRow-big,
 .RightRow-big{
-    min-width: 456px;
+    min-width: 455px;
 }
 .leftRow-big thead tr,
 .RightRow-big thead tr {
-    border-bottom: 2px solid rgb(0, 39, 148);
+    border-bottom: 2px solid rgb(0, 68, 253);
 }
 
 .RightRow-big thead tr th {
@@ -304,7 +301,7 @@ ul li:nth-child(2) .iconStatus::after{
 
 .leftRow-big, .RightRow-big {
     float: left;
-    margin: 0.25rem;
+    margin: 0.20rem;
 }
 
 
@@ -332,10 +329,6 @@ ul li:nth-child(2) .iconStatus::after{
 .leftRow-big tbody tr td{
     color: black;
 }
-
-
-
-
 
 .leftRow-big td,
 .RightRow-big td {
@@ -395,7 +388,7 @@ ul li:nth-child(2) .iconStatus::after{
     grid-column: 1 / 9;
     grid-row: 2 / 4;
     position: relative;
-    height: 1400px;
+    height: auto;
     width: 100%;
     box-shadow: 5px 5px 15px 15px rgba(255, 255, 255, 0.1),
                 5px 5px 15px 15px rgba(0, 0, 0, 0.1);
@@ -411,16 +404,10 @@ ul li:nth-child(2) .iconStatus::after{
 
 .tabtitle {
     display: inline;
-    /* float: left; */
-    /* margin: 0 auto; */
     margin-left: 3.25rem;
     margin-right: 3.25rem;
-    /* border: none; */
-    /* outline: none; */
     cursor: pointer;
-    /* padding: 14px 16px; */
-    /* transition: 0.3s; */
-    /* font-size: 17px;   */
+    transition: 0.3s;
 }
 
 
@@ -547,6 +534,162 @@ ul li:nth-child(2) .iconStatus::after{
     text-align: left;
 }
 
+/* Fourth Tab */
+
+.upload-container {
+    list-style-type: none;
+    padding: 0;
+    width: 750px;
+    margin: 60px auto;
+    margin-right: 8rem;
+
+    /* border: 1px solid green; */
+}
+
+
+.upload-title {
+    font-size: 1rem;
+    text-align: left;
+    float: left;
+    /* border: 1px solid green; */
+}
+
+ .upload-count {
+    text-align: right;
+    font-size: 1rem;
+    /* border: 1px solid green; */
+
+}
+
+.upload-container li {
+    margin: 20px 0;
+    /* border: 1px solid green; */
+}
+
+.upload-bar {
+    background: #afafaf;
+    display: block;
+    height: 7.5px;
+    border: 1px solid rgba(0,0,0,0.3);
+    border-radius: 3px;
+    overflow: hidden;
+    /* border: 1px solid green; */
+}
+
+.upload-bar span{
+    height: 7.5px;
+    float: left;
+    background: #0ff32d;
+}
+
+.file {
+    width: 70%;
+}
+
+.upload-button-container{
+   position: absolute; 
+   right: 2rem;
+   top: 95px;
+
+}
+
+.second-section-left,
+.second-section-right{
+    /* border: 1px solid green; */
+    margin-bottom: 1rem;
+}
+
+.second-section-left thead tr,
+.second-section-right thead tr {
+    background-color: rgb(195, 194, 194);
+    border-bottom: none;
+}
+
+
+.second-section-left thead tr th,
+.second-section-right thead tr th
+{
+    text-align: left;
+    color: rgb(0, 39, 148);
+    font-size: 0.75rem;
+    padding: 0.75rem;
+    padding-left: 2.5rem;
+    padding-top: 1rem;
+}
+
+.second-section-left tbody tr td,
+.second-section-right tbody tr td {
+    color: black;
+}
+
+.second-section-left tbody tr td:first-child {
+    padding: 0;
+    padding-left: 2.5rem;
+}
+
+
+.second-section-right tbody tr td:first-child {
+    padding-right: 5rem;
+}
+
+
+
+.section-input-container {
+    margin: 1.5rem;
+    margin-left: 3rem;
+} 
+
+.section-input-leftside,
+.section-input-rightside {
+    color: rgb(121, 121, 121);
+}
+
+.section-input-leftside {
+    min-width: 45%;
+    padding-left: 1rem;
+    display: inline-block;
+    float: left;
+    margin: 0.5rem;
+}
+
+.section-input-leftside * {
+    float: left;
+}
+
+.section-input-rightside {
+    padding-left: 1rem;
+    min-width: 45%;
+    display: inline-block;
+    float: left;
+    margin: 0.5rem;
+}
+
+.section-input-rightside * {
+    float: left;
+}
+
+.inputgroup{
+    width: 50%;
+}
+
+.section-input-description-first,
+.section-input-description-second,
+.inputgroup
+{   
+    padding: 0.5rem;
+}
+
+.btn-prim, .btn-sec {
+    margin: 0.5rem;
+}
+
+/* For showing outline */
+.section-input-leftside,
+.section-input-rightside {
+       /* border: 3px solid green;  */
+}
+
+
 .fourth-tab tr th,
 .fourth-tab tr td{
     border: 1px solid rgb(209, 207, 207);
@@ -560,13 +703,14 @@ ul li:nth-child(2) .iconStatus::after{
     text-align: center;
 }
 
-.fourth-tab  thead tr td {
-    
-}
-
 
 .fourth-tab thead tr th {
     background-color: rgb(228, 226, 226);
+}
+
+.fourth-tab tbody tr td  i {
+    font-size: 1.25rem;
+    color: rgb(0, 68, 253);
 }
 
 

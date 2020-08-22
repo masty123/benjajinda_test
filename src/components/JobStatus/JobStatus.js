@@ -1,6 +1,6 @@
 import React, { Component} from 'react';
 // import { MenuItems } from "./MenuItems";
-import {Button} from 'reactstrap';
+import {Button, Input, InputGroup, InputGroupAddon} from 'reactstrap';
 import './JobStatus.css';
 import {
     Tab,
@@ -406,150 +406,385 @@ class JobStatus extends Component {
 
                         <TabPanel>
 
-                                <div className="config-icon">
-
-                                    {/* Left Side */}
-                                        <div className="config-start">
-                                            <div className="config-left">
-                                                <p>Config ต้นทาง</p>
-                                            </div>
-                                            <div className="config-right">
-                                                <p> </p>
-                                            </div>
+                                <div className="upload-progress-container">
+                                    <div class="upload-container">
+                                        <div className="progress-container">
+                                          <li>
+                                            <h3 className="upload-title">Upload Complete</h3>
+                                            <h3 className="upload-count">13/27</h3>
+                                     
+                                            <span class="upload-bar">
+                                                <span class="file"></span>
+                                            </span>
+                                          </li>
                                         </div>
+                                    </div>
 
-                                        {/* Line Thingy */}
-                                        <div className="connection-line">
-                                            <p>*-----*</p>
-                                        </div>
-
-                                        {/* Right Side */}
-                                        <div className="config-final">
-                                                <div className="config-left">
-                                                    <p>Config ปลายทาง</p>
-                                                </div>
-                                                <div className="config-right">
-                                                    <p>MPLS</p>
-                                                </div>
-                                        </div>
+                                    <div className="upload-button-container">
+                                             <Button color="warning" class="upload-button">+ Upload</Button>{' '}
+                                    </div>
+                               
                                 </div>
 
                                 <div className="table-div">
-                                        <table class="content-table leftRow-big">
+
+                                        <table class="content-table leftRow-big second-section-left">
                                                 <thead>
-                                                    <tr>
-                                                        <th>-</th>
-                                                        <th>Customer Node</th>
-                                                        <th>Network Node</th>
+                                                    <tr className="table-header">
+                                                        <th>บันทึกผลตรวจรับการติดตั้ง Fiber</th>
+                                                        <th></th>
                                                     </tr>
                                                 </thead>
                                                 <tbody>
                                                     <tr>
-                                                        <td>Node</td>
-                                                        <td>-</td>
-                                                        <td>-</td>
+                                                        <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit</td>
+                                                        <td><i class="fas fa-eye"></i></td>
                                                     </tr>
                                                      <tr>
-                                                        <td>Card</td>
+                                                        <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit</td>
+                                                        <td><i class="fas fa-eye"></i></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit</td>
+                                                        <td><i class="fas fa-eye"></i></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit</td>
+                                                        <td><i class = "fas fa-eye"></i></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit</td>
+                                                        <td><i class = "fas fa-eye"></i></td>
+                                                   
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit</td>
+                                                        <td><i class = "fas fa-eye"></i></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit</td>
+                                                        <td><i class = "fas fa-eye"></i></td>
+                                                    </tr>
+                                                </tbody>
+
+                                                
+                                         </table>
+
+                                        <table class="content-table RightRow-big second-section-right">
+                                                <thead>
+                                                    <tr>
+                                                        <th>บันทึกข้อมูลที่ติดตั้งที่ลูกค้า</th>
+                                                        <th></th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit</td>
+                                                        <td><i class = "fas fa-eye"></i></td>
+
+                                                    </tr>
+                                                     <tr>
+                                                        <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit</td>
+                                                        <td><i class = "fas fa-eye"></i></td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit</td>
+                                                        <td><i class = "fas fa-eye"></i></td>
+
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit</td>
+                                                        <td><i class = "fas fa-eye"></i></td>
+
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit</td>
+                                                         <td><i class = "fas fa-eye"></i></td>
+                                                    </tr>
+                                                </tbody>
+                                         </table>       
+
+                                        <table class="content-table leftRow-big second-section-left">
+                                                <thead>
+                                                    <tr className="table-header">
+                                                        <th>Draw Free Hand</th>
+                                                        <th></th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit</td>
+                                                        <td><i class="fas fa-eye"></i></td>
+                                                    </tr>
+                                                </tbody>
+                                         </table>   
+
+                                        <table class="content-table RightRow-big second-section-right">
+                                                <thead>
+                                                    <tr>
+                                                        <th>ภาพถ่าย</th>
+                                                        <th></th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit</td>
+                                                        <td><i class = "fas fa-eye"></i></td>
+
+                                                    </tr>
+                                                     <tr>
+                                                        <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit</td>
+                                                        <td><i class = "fas fa-eye"></i></td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit</td>
+                                                        <td><i class = "fas fa-eye"></i></td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit</td>
+                                                        <td><i class = "fas fa-eye"></i></td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit</td>
+                                                         <td><i class = "fas fa-eye"></i></td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit</td>
+                                                         <td><i class = "fas fa-eye"></i></td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit</td>
+                                                         <td><i class = "fas fa-eye"></i></td>
+                                                    </tr>        
+                                                </tbody>
+                                         </table>       
+
+                                        <table class="content-table leftRow-big second-section-left">
+                                                <thead>
+                                                    <tr className="table-header">
+                                                        <th>เอกสาร</th>
+                                                        <th></th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit</td>
+                                                        <td><i class="fas fa-eye"></i></td>
+                                                    </tr>
+                                                     <tr>
+                                                        <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit</td>
+                                                        <td><i class="fas fa-eye"></i></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit</td>
+                                                        <td><i class="fas fa-eye"></i></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit</td>
+                                                        <td><i class = "fas fa-eye"></i></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit</td>
+                                                        <td><i class = "fas fa-eye"></i></td>
+                                                   
+                                                    </tr>
+                                                </tbody>
+                                         </table>   
+
+                                        <table class="content-table RightRow-big second-section-right">
+                                                <thead>
+                                                    <tr>
+                                                        <th>รายการอุปกรณ์</th>
+                                                        <th></th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit</td>
+                                                        <td><i class = "fas fa-eye"></i></td>
+
+                                                    </tr>
+                                                     <tr>
+                                                        <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit</td>
+                                                        <td><i class = "fas fa-eye"></i></td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit</td>
+                                                        <td><i class = "fas fa-eye"></i></td>
+
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit</td>
+                                                        <td><i class = "fas fa-eye"></i></td>
+                                                    </tr>
+                                                </tbody>
+                                         </table>
+                                              
+                                </div>
+
+                                <div className="section">
+                              <p className="section-description"> 
+                                         ผลการตรวจสอบ OTDR
+                                        <Button color = "warning" className="dropbtn"> <i class="fas fa-angle-down"></i></Button>{' '}
+                                   </p>
+                                         <table class="content-table equipment-table-big fourth-tab">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Site</th>
+                                                        <th>ขนาด</th>
+                                                        <th>ยี่ห้อ</th>
+                                                        <th>Wave Length</th>
+                                                        <th>Pulse Width</th>
+                                                        <th>Link</th>
+                                                        <th>ความยาว</th>
+                                                        <th>จำนวน</th>
+                                                        <th>Lose รวมจากการคำนวน</th>
+                                                        <th>Otdr ยี่ห้อ</th>
+                                                        <th>Otdr รุ่น</th>
+                                                        <th>ระยะ Dummy</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>A</td>
+                                                        <td>4</td>
+                                                        <td>0</td>
+                                                        <td>0</td>
+                                                        <td>0</td>
+                                                        <td>A to B.</td>
+                                                        <td>0</td>
+                                                        <td>0</td>
+                                                        <td>0</td>
+                                                        <td>-</td>
                                                         <td>-</td>
                                                         <td>-</td>
                                                     </tr>
+                                                </tbody>
+                                                <tbody>
                                                     <tr>
-                                                        <td>Mod</td>
+                                                        <td>B</td>
+                                                        <td>4</td>
+                                                        <td>0</td>
+                                                        <td>0</td>
+                                                        <td>0</td>
+                                                        <td>A to B.</td>
+                                                        <td>0</td>
+                                                        <td>0</td>
+                                                        <td>0</td>
                                                         <td>-</td>
-                                                        <td>-</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Interface</td>
-                                                        <td>-</td>
-                                                        <td>-</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>NTU</td>
-                                                        <td>-</td>
-                                                        <td>Slot</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Card</td>
-                                                        <td>-</td>
-                                                        <td>Text_Celliste(Non-Martis)</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Speed</td>
                                                         <td>-</td>
                                                         <td>-</td>
                                                     </tr>
                                                 </tbody>
                                          </table>
 
-                                        <table class="content-table RightRow-big">
+                                         <div className="section-input-container">
+                                            <div className="section-input">
+
+                                             <div className="section-input-leftside">
+                                                <p className="section-input-description-first">เส้นที่</p>
+                                                    <InputGroup className="inputgroup">
+                                                        <InputGroupAddon className="inputbox" addonType="prepend">                  
+                                                        </InputGroupAddon>
+                                                        <Input />
+                                                    </InputGroup>
+                                                <p className="section-input-description-second"> / 1</p>
+                                             </div>
+
+                                             <div className="section-input-rightside">
+                                                    <p className="section-input-description-first">รายละเอียด OTDR  </p>
+                                                    <InputGroup className="inputgroup">
+                                                        <InputGroupAddon addonType="prepend">                  
+                                                        </InputGroupAddon>
+                                                        <Input />
+                                                    </InputGroup>
+                                                    <p className="section-input-description-second"> / 0</p>
+                                                </div>
+                                        </div>
+                                          
+                                            
+                                            <div className="button-container">
+                                                <Button outline color="primary" className="btn-prim">แสดงทั้งหมด</Button>{' '}
+                                                <Button outline color="primary" className="btn-sec">คัดลอกแบบช่วง</Button>{' '}
+                                            </div>
+                                         </div>
+
+                                        <table class="content-table equipment-table-big fourth-tab">
                                                 <thead>
                                                     <tr>
-                                                        <th>Network Node</th>
-                                                        <th>Customer Node</th>
+                                                        <th></th>
+                                                        <th>Site</th>
+                                                        <th>Core</th>
+                                                        <th>A - B Loss</th>
+                                                        <th>B - A Loss</th>
+                                                        <th>Avg Loss</th>
+                                                        <th>Action</th>
                                                     </tr>
                                                 </thead>
                                                 <tbody>
                                                     <tr>
+                                                        <td>A</td>
                                                         <td>-</td>
-                                                        <td>881025</td>
-                                                    </tr>
-                                                     <tr>
                                                         <td>-</td>
-                                                        <td>Lsw_P1</td>
+                                                        <td>-</td>
+                                                        <td>-</td>
+                                                        <td>-</td>
+                                                        <td><i class="fas fa-clipboard-list"></i></td>
                                                     </tr>
+                                                </tbody>
+                                                 <tbody>
                                                     <tr>
+                                                        <td>B</td>
                                                         <td>-</td>
                                                         <td>-</td>
-                                                    </tr>
-                                                    <tr>
                                                         <td>-</td>
                                                         <td>-</td>
-                                                    </tr>
-                                                    <tr>
                                                         <td>-</td>
-                                                        <td>-</td>
-                                                    </tr>
-
-                                                    <tr>
-                                                        <td>Text_Celliste(Non-Martis)</td>
-                                                        <td>-</td>
-                                                    </tr>
-
-                                                    <tr>
-                                                        <td>Speed</td>
-                                                        <td>-</td>
+                                                        <td><i class="fas fa-clipboard-list"></i></td>
                                                     </tr>
                                                 </tbody>
                                          </table>
                                 </div>
 
                                 <div className="section">
-                                   <p className="section-description"> 
-                                   รายละเอียด NMC (NON-POTS) 
-                                     <Button color = "warning" className="dropbtn"> <i class="fas fa-angle-down"></i></Button>{' '}
+                                    <p className="section-description"> 
+                                         จุดตัดต่อระหว่างทาง
+                                        <Button color = "warning" className="dropbtn"> <i class="fas fa-angle-down"></i></Button>{' '}
                                    </p>
-                                    <p className="section-description-tertiary">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing 
-                                        elit, sed do eiusmod tempor incididunt ut labore 
-                                        et dolore magna aliqua.Ut enim ad minim veniam, 
-                                        quis nostrud exercitation ullamco laboris nisi ut 
-                                        aliquip ex ea commodo consequat.
-                                    </p>
-                                </div>
-
-                                <div className="section">
-                                   <p className="section-description"> 
-                                   รายละเอียด Job ปลายทาง 
-                                    <Button color = "warning" className="dropbtn"> <i class="fas fa-angle-down"></i></Button>{' '}
-                                   </p>
-                                    <p className="section-description-tertiary">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing 
-                                        elit, sed do eiusmod tempor incididunt ut labore 
-                                        et dolore magna aliqua.Ut enim ad minim veniam, 
-                                        quis nostrud exercitation ullamco laboris nisi ut 
-                                        aliquip ex ea commodo consequat.
-                                    </p>
+                                         <table class="content-table equipment-table-big fourth-tab">
+                                                <thead>
+                                                    <tr>
+                                                        <th>จุดตัดต่อ</th>
+                                                        <th>Lat Long</th>
+                                                        <th>ชนิดของสาย</th>
+                                                        <th>การใช้งาน</th>
+                                                        <th>ใช้จริง</th>
+                                                        <th>Spare</th>
+                                                        <th>Remark</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>-</td>
+                                                        <td>-</td>
+                                                        <td>-</td>
+                                                        <td>-</td>
+                                                        <td>-</td>
+                                                        <td>-</td>
+                                                        <td>-</td>
+                                                    </tr>
+                                                </tbody>
+                                         </table>
                                 </div>
 
                                 <div className="section">
