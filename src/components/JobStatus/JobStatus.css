@@ -194,10 +194,6 @@ ul li:nth-child(2) .iconStatus::after{
     border-bottom: 1px solid rgb(194, 193, 193);
 }
 
-.order-type-section p {
-
-}
-
 .order-type,
 .order-type-description {
     font-size: 0.5rem;
@@ -210,23 +206,6 @@ ul li:nth-child(2) .iconStatus::after{
     float: left;
     color: black;
 }
-
-
-.order-type-description{
-}
-
-
-
-
-.order-type {
-    /* padding-left: 1rem; */
-}
-
-
-
-
-
-
 
 .content-info{
     width: 430px;
@@ -376,7 +355,20 @@ ul li:nth-child(2) .iconStatus::after{
 }
 
 .handler-content-info div p:nth-child(2) {
-    text-align: right;}
+    text-align: right;
+}
+.handler-status-container .handler-status {
+    color: green;
+}
+
+.handler-status i {
+    margin-right: 0.2rem;
+}
+
+.handler-name-container .handler-username {
+    color: rgb(0, 39, 148);
+}
+
 
 /* Job Description */
 .tab {

@@ -158,18 +158,18 @@ class JobStatus extends Component {
 
                          <div className="handler-content-info">
 
-                            <div>
-                                <p>ปิดงาน</p>
+                            <div className="handler-status-container">
+                                <p className="handler-status"><i class="fas fa-circle"></i>ปิดงาน</p>
                                 <p>15/07/2015 11:03:31</p>
                             </div>
 
-                             <div>
-                                <p>นราศิริ สุขไพบูรณ์วัฒน์</p>
-                                <p>teerati_c</p>
+                             <div className="handler-name-container">
+                                <p className="handler-name">นราศิริ สุขไพบูรณ์วัฒน์</p>
+                                <p className="handler-username">teerati_c</p>
                             </div>
 
-                            <div>
-                                <p>(Coordinator)/Coordinator BKK</p>
+                            <div className="handler-role">
+                                <p className="handler-role-description">(Coordinator)/Coordinator BKK</p>
                             </div>
 
                             <div>
