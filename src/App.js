@@ -8,8 +8,8 @@ function App() {
   return (
     <div className="App">
         <Navbar />
-        <Header className="overlap" />
-        <JobStatus />
+        {/* <Header className="overlap" /> */}
+        {/* <JobStatus /> */}
     </div>
   );
 }

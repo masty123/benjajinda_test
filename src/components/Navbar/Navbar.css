@@ -5,11 +5,9 @@
     display: flex;
     justify-content: left;
     align-items: center;
-    font-size: 1rem;
-
 }
 
-.navbar-logo {
+.topnav-centered {
     color: rgb(0, 39, 148);
     justify-self: start;
     margin-left: 15px;
@@ -23,21 +21,24 @@
     padding: 10px;
 }
 
+.menu-icon {
+    /* display: none; */
+    margin-left: 1rem;
+
+}
 
 .fa-bars{
-    margin-left: 1.25rem;
-    background-color: yellow;
-    border-radius: 50%;
-    width: 2.5rem;
-    padding: 10px;   
+    font-size: 2.5rem;
+    /* width: 2.5rem; */
+    /* padding: 10px;    */
 }
 
 .page-description {
-  float: none;
+  /* float: none; */
   position: absolute;
-  top: 5%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  /* top: 4%; */
+  /* left: 50%;  */
+  /* transform: translate(-50%, -50%); */
   color:  rgb(0, 39, 148);
   font-size: 1.5rem;
   font-weight: bold;
@@ -140,6 +141,3 @@
     /* display: none; */
 }
 
-.menu-icon {
-    /* display: none; */
-}

@@ -1,6 +1,7 @@
 * {
     box-sizing: border-box;
     resize: none;
+    border: 1px solid pink;
 }
 .job-header-container{
     display: grid;
@@ -15,6 +16,7 @@
     background: -webkit-linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(0, 15, 255, 1) 0%, rgba(43, 83, 149, 1) 100%, rgba(9, 124, 116, 1) 100%);
     background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(0, 15, 255, 1) 0%, rgba(43, 83, 149, 1) 100%, rgba(9, 124, 116, 1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024", endColorstr="#097c74", GradientType=1);
+
 }
 
 .job-container{
@@ -41,15 +43,16 @@
 /* Left Menu*/
 
 .job-info {
-    color: #fff;
-    margin-right: 50rem;
-    margin-left: 7.5rem;
-    width: 60%;
+    color: #fff; 
+    /* margin-right: 50rem;
+    margin-left: 7.5rem; */
+    margin: 0 auto;
+    /* width: 60%; */
 }
 
 .job-info-number-description{
     display: flex;
-    margin-left: 1rem;
+    /* margin-left: 1rem; */
 }
 
 .job-info-serial-number {
