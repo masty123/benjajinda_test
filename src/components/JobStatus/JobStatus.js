@@ -6,9 +6,7 @@ import {
     Tab,
     Tabs,
     TabList,
-    TabPanel,
-    AppBar
-} from 'react-tabs';
+    TabPanel} from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 
 
@@ -66,20 +64,16 @@ class JobStatus extends Component {
                             <p className="company-title">บริษัท ไทย-โกเบ เวลติ้ง จำกัด</p>
                         </div>
 
-                   
-
-
+                
                          <div className="buttonJob">
-                            <Button color = "warning" > Approve Job </Button>{' '}
-                        <div className="dropdown">
-                              <Button color = "warning" className="dropbtn"> <i class="fas fa-angle-down"></i></Button>{' '}
-                            <div className="dropdown-content">
-                                 <Button color="danger" className="rejectButton">Reject</Button>{' '}
-                            </div>
+                                <Button color = "warning" > Approve Job </Button>{' '}
+                            <div className="dropdown">
+                                <Button color = "warning" className="dropbtn"> <i class="fas fa-angle-down"></i></Button>{' '}
+                                <div className="dropdown-content">
+                                    <Button color="danger" className="rejectButton">Reject</Button>{' '}
+                                </div>
+                            </div>         
                         </div>
-                          
-                        </div>
-
 
                         <div className="content-info">
 
@@ -122,6 +116,11 @@ class JobStatus extends Component {
                                 <p>Service Type</p>
                                 <p>MPLS - Fullmesh</p>
                             </div>
+                        </div>
+
+                        <div className="order-type-section">
+                            <p className="order-type">Order Type</p>
+                            <p className="order-type-description"> IA02 Access Change Service </p>
                         </div>
 
                         <table class="content-table">
@@ -201,39 +200,384 @@ class JobStatus extends Component {
 
 
                         <TabPanel>
+
                            <p className="tab-3-title">Job - Network Address - Link Details</p>
 
-                           <div className="config-icon">
+                                <div className="config-icon">
 
-                               {/* Left Side */}
-                                <div className="config-start">
-                                    <div className="config-left">
-                                        <p>Config ต้นทาง</p>
-                                    </div>
-                                    <div className="config-right">
-                                        <p> </p>
-                                    </div>
+                                    {/* Left Side */}
+                                        <div className="config-start">
+                                            <div className="config-left">
+                                                <p>Config ต้นทาง</p>
+                                            </div>
+                                            <div className="config-right">
+                                                <p> </p>
+                                            </div>
+                                        </div>
+
+                                        {/* Line Thingy */}
+                                        <div className="connection-line">
+                                            <p>*-----*</p>
+                                        </div>
+
+                                        {/* Right Side */}
+                                        <div className="config-final">
+                                                <div className="config-left">
+                                                    <p>Config ปลายทาง</p>
+                                                </div>
+                                                <div className="config-right">
+                                                    <p>MPLS</p>
+                                                </div>
+                                        </div>
                                 </div>
 
-                                {/* Line Thingy */}
-                                <div className="connection-line">
-                                     <p>*-----*</p>
+                                <div className="table-div">
+                                        <table class="content-table leftRow-big">
+                                                <thead>
+                                                    <tr>
+                                                        <th>-</th>
+                                                        <th>Customer Node</th>
+                                                        <th>Network Node</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Node</td>
+                                                        <td>-</td>
+                                                        <td>-</td>
+                                                    </tr>
+                                                     <tr>
+                                                        <td>Card</td>
+                                                        <td>-</td>
+                                                        <td>-</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Mod</td>
+                                                        <td>-</td>
+                                                        <td>-</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Interface</td>
+                                                        <td>-</td>
+                                                        <td>-</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>NTU</td>
+                                                        <td>-</td>
+                                                        <td>Slot</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Card</td>
+                                                        <td>-</td>
+                                                        <td>Text_Celliste(Non-Martis)</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Speed</td>
+                                                        <td>-</td>
+                                                        <td>-</td>
+                                                    </tr>
+                                                </tbody>
+                                         </table>
+
+                                        <table class="content-table RightRow-big">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Network Node</th>
+                                                        <th>Customer Node</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>-</td>
+                                                        <td>881025</td>
+                                                    </tr>
+                                                     <tr>
+                                                        <td>-</td>
+                                                        <td>Lsw_P1</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>-</td>
+                                                        <td>-</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>-</td>
+                                                        <td>-</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>-</td>
+                                                        <td>-</td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td>Text_Celliste(Non-Martis)</td>
+                                                        <td>-</td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td>Speed</td>
+                                                        <td>-</td>
+                                                    </tr>
+                                                </tbody>
+                                         </table>
                                 </div>
 
-                                 {/* Right Side */}
-                                 <div className="config-final">
-                                        <div className="config-left">
-                                            <p>Config ปลายทาง</p>
-                                        </div>
-                                        <div className="config-right">
-                                            <p>MPLS</p>
-                                        </div>
-                                 </div>
-                           </div>
+                                <div className="section">
+                                   <p className="section-description"> 
+                                   รายละเอียด NMC (NON-POTS) 
+                                     <Button color = "warning" className="dropbtn"> <i class="fas fa-angle-down"></i></Button>{' '}
+                                   </p>
+                                    <p className="section-description-tertiary">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing 
+                                        elit, sed do eiusmod tempor incididunt ut labore 
+                                        et dolore magna aliqua.Ut enim ad minim veniam, 
+                                        quis nostrud exercitation ullamco laboris nisi ut 
+                                        aliquip ex ea commodo consequat.
+                                    </p>
+                                </div>
+
+                                <div className="section">
+                                   <p className="section-description"> 
+                                   รายละเอียด Job ปลายทาง 
+                                    <Button color = "warning" className="dropbtn"> <i class="fas fa-angle-down"></i></Button>{' '}
+                                   </p>
+                                    <p className="section-description-tertiary">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing 
+                                        elit, sed do eiusmod tempor incididunt ut labore 
+                                        et dolore magna aliqua.Ut enim ad minim veniam, 
+                                        quis nostrud exercitation ullamco laboris nisi ut 
+                                        aliquip ex ea commodo consequat.
+                                    </p>
+                                </div>
+
+                                <div className="section">
+                                   <p className="section-description"> 
+                                        ใบเบิกอุปกรณ์ 
+                                        <Button color = "warning" className="dropbtn"> <i class="fas fa-angle-down"></i></Button>{' '}
+                                   </p>
+                                   <p className="section-description-secondary">ใบเบิกปลายทาง: 202055</p>
+                                         <table class="content-table equipment-table-big">
+                                                <thead>
+                                                    <tr>
+                                                        <th>List</th>
+                                                        <th>Sap Id</th>
+                                                        <th>Qty</th>
+                                                        <th> Unit</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>UAR18E</td>
+                                                        <td>XXXXXX</td>
+                                                        <td>1</td>
+                                                        <td>Unit</td>
+                                                    </tr>
+                                                     <tr>
+                                                        <td>UAR158E</td>
+                                                        <td>XXXXXX</td>
+                                                        <td>1</td>
+                                                        <td>Unit</td>
+                                                        
+                                                    </tr>
+                                                    <tr>
+                                                        <td>UAR161F</td>
+                                                        < td>XXXXXX</td>
+                                                        <td>1</td>
+                                                        <td>Unit</td>     
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td>UAR161F</td>
+                                                        < td>XXXXXX</td>
+                                                        <td>1</td>
+                                                        <td>Unit</td>     
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td>UPANS-AR161F=2</td>
+                                                        <td>XXXXXX</td>
+                                                        <td>1</td>
+                                                        <td>Unit</td>
+                                                    </tr>
+                                                </tbody>
+                                         </table>
+                                </div>
+                           
                         </TabPanel>
 
                         <TabPanel>
-                           <h2>...</h2>
+
+                                <div className="config-icon">
+
+                                    {/* Left Side */}
+                                        <div className="config-start">
+                                            <div className="config-left">
+                                                <p>Config ต้นทาง</p>
+                                            </div>
+                                            <div className="config-right">
+                                                <p> </p>
+                                            </div>
+                                        </div>
+
+                                        {/* Line Thingy */}
+                                        <div className="connection-line">
+                                            <p>*-----*</p>
+                                        </div>
+
+                                        {/* Right Side */}
+                                        <div className="config-final">
+                                                <div className="config-left">
+                                                    <p>Config ปลายทาง</p>
+                                                </div>
+                                                <div className="config-right">
+                                                    <p>MPLS</p>
+                                                </div>
+                                        </div>
+                                </div>
+
+                                <div className="table-div">
+                                        <table class="content-table leftRow-big">
+                                                <thead>
+                                                    <tr>
+                                                        <th>-</th>
+                                                        <th>Customer Node</th>
+                                                        <th>Network Node</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Node</td>
+                                                        <td>-</td>
+                                                        <td>-</td>
+                                                    </tr>
+                                                     <tr>
+                                                        <td>Card</td>
+                                                        <td>-</td>
+                                                        <td>-</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Mod</td>
+                                                        <td>-</td>
+                                                        <td>-</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Interface</td>
+                                                        <td>-</td>
+                                                        <td>-</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>NTU</td>
+                                                        <td>-</td>
+                                                        <td>Slot</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Card</td>
+                                                        <td>-</td>
+                                                        <td>Text_Celliste(Non-Martis)</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Speed</td>
+                                                        <td>-</td>
+                                                        <td>-</td>
+                                                    </tr>
+                                                </tbody>
+                                         </table>
+
+                                        <table class="content-table RightRow-big">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Network Node</th>
+                                                        <th>Customer Node</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>-</td>
+                                                        <td>881025</td>
+                                                    </tr>
+                                                     <tr>
+                                                        <td>-</td>
+                                                        <td>Lsw_P1</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>-</td>
+                                                        <td>-</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>-</td>
+                                                        <td>-</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>-</td>
+                                                        <td>-</td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td>Text_Celliste(Non-Martis)</td>
+                                                        <td>-</td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td>Speed</td>
+                                                        <td>-</td>
+                                                    </tr>
+                                                </tbody>
+                                         </table>
+                                </div>
+
+                                <div className="section">
+                                   <p className="section-description"> 
+                                   รายละเอียด NMC (NON-POTS) 
+                                     <Button color = "warning" className="dropbtn"> <i class="fas fa-angle-down"></i></Button>{' '}
+                                   </p>
+                                    <p className="section-description-tertiary">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing 
+                                        elit, sed do eiusmod tempor incididunt ut labore 
+                                        et dolore magna aliqua.Ut enim ad minim veniam, 
+                                        quis nostrud exercitation ullamco laboris nisi ut 
+                                        aliquip ex ea commodo consequat.
+                                    </p>
+                                </div>
+
+                                <div className="section">
+                                   <p className="section-description"> 
+                                   รายละเอียด Job ปลายทาง 
+                                    <Button color = "warning" className="dropbtn"> <i class="fas fa-angle-down"></i></Button>{' '}
+                                   </p>
+                                    <p className="section-description-tertiary">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing 
+                                        elit, sed do eiusmod tempor incididunt ut labore 
+                                        et dolore magna aliqua.Ut enim ad minim veniam, 
+                                        quis nostrud exercitation ullamco laboris nisi ut 
+                                        aliquip ex ea commodo consequat.
+                                    </p>
+                                </div>
+
+                                <div className="section">
+                                   <p className="section-description"> 
+                                         ผลการตรวจสอบ Ground Resistance
+                                        <Button color = "warning" className="dropbtn"> <i class="fas fa-angle-down"></i></Button>{' '}
+                                   </p>
+                                         <table class="content-table equipment-table-big fourth-tab">
+                                                <thead>
+                                                    <tr>
+                                                        <th>ลำดับ</th>
+                                                        <th>Lat Long</th>
+                                                        <th>ประเภทสาย</th>
+                                                        <th>ROD{' <= '} 30</th>
+                                                        <th>System{' <= '} 10</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>-</td>
+                                                        <td>-</td>
+                                                        <td>-</td>
+                                                        <td>-</td>
+                                                        <td>-</td>
+                                                    </tr>
+                                                </tbody>
+                                         </table>
+                                </div>
                         </TabPanel>
                     </Tabs>
 

@@ -2,6 +2,8 @@ body {
     color: rgb(0, 39, 148);
 }
 
+
+
 .jobstatuscontainer{
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -186,6 +188,50 @@ ul li:nth-child(2) .iconStatus::after{
    left: -7.8rem;
 }
 
+.order-type-section {
+    /* float: left; */
+    /* font-size: 0.5rem; */
+    /* width: 100%; */
+    /* display: inline-block; */
+    margin: 1rem 0.8rem 0.25rem 0.4rem;
+    border-bottom: 1px solid rgb(194, 193, 193);
+}
+
+.order-type-section p {
+    /* float: left; */
+    /* padding-left: 0.6rem; */
+}
+
+.order-type,
+.order-type-description {
+    font-size: 0.5rem;
+    display: inline-block;
+}
+
+.order-type {
+    padding-top: 0.5rem;
+    padding-left: 0.2rem;
+    float: left;
+    color: black;
+}
+
+
+.order-type-description{
+}
+
+
+
+
+.order-type {
+    /* padding-left: 1rem; */
+}
+
+
+
+
+
+
+
 .content-info{
     width: 430px;
     height: auto;
@@ -216,6 +262,7 @@ ul li:nth-child(2) .iconStatus::after{
 .content-table {
   font-size: 0.5rem;
   min-width: 400px;
+  height:auto;
   overflow: hidden;
 }
 
@@ -224,15 +271,83 @@ ul li:nth-child(2) .iconStatus::after{
   font-weight: bold;
 }
 
+.content-table th,
+.content-table td {
+    padding-top: 0.25rem;
+    padding-left: 2.75rem;
+    padding-bottom: 1rem;
+}
+
+/* .table-div {
+    height: 600px;
+} */
+
+
+
+
+.leftRow-big,
+.RightRow-big{
+    min-width: 456px;
+}
+.leftRow-big thead tr,
+.RightRow-big thead tr {
+    border-bottom: 2px solid rgb(0, 39, 148);
+}
+
+.RightRow-big thead tr th {
+    color: rgb(0, 39, 148);
+}
+
 .content-table th{
     color:  black;
 }
 
-.content-table th,
-.content-table td {
-  padding-top: 0.25rem;
-  padding-left: 2.75rem;
-  padding-bottom: 1rem;
+.leftRow-big, .RightRow-big {
+    float: left;
+    margin: 0.25rem;
+}
+
+
+
+.leftRow-big tbody tr td 
+{
+    text-align: left;
+    padding-left: 3.5rem;
+}
+
+.RightRow-big tbody tr td
+{
+    padding-left: 0rem;
+}
+
+.leftRow-big tbody tr td:nth-child(3){
+    padding-left: 6.56rem;
+}
+
+.RightRow-big tbody tr td:nth-child(3)
+{
+    padding-left: 2.5rem;
+}
+
+.leftRow-big tbody tr td{
+    color: black;
+}
+
+
+
+
+
+.leftRow-big td,
+.RightRow-big td {
+    padding-top: 1rem;
+}
+
+
+
+
+
+.content-table tbody tr:nth-of-type(even) {
+    background-color: #e6e4e4;
 }
 
 /* Secondary Right Window */
@@ -271,16 +386,16 @@ ul li:nth-child(2) .iconStatus::after{
     text-align: right;}
 
 /* Job Description */
-/* Style the tab */
 .tab {
     text-decoration: none;
-    margin: -3rem auto;
+    margin: -3rem 1rem 1rem 1rem;
     margin-left: 1rem;
     float: left;
     padding: 12px;
     grid-column: 1 / 9;
     grid-row: 2 / 4;
     position: relative;
+    height: 1400px;
     width: 100%;
     box-shadow: 5px 5px 15px 15px rgba(255, 255, 255, 0.1),
                 5px 5px 15px 15px rgba(0, 0, 0, 0.1);
@@ -318,6 +433,9 @@ ul li:nth-child(2) .iconStatus::after{
 
 }
 
+
+
+/* Connection Thingy */
 .config-icon {
     width: 100%;
     height: 100px;
@@ -331,8 +449,6 @@ ul li:nth-child(2) .iconStatus::after{
     width: 100px;
     height: 75px;
 }
-
-
 
 .config-left  ,
 .config-right  {
@@ -373,29 +489,84 @@ ul li:nth-child(2) .iconStatus::after{
     text-align: center;
 }
 
-
-
-
-
-
-
-
-
-
-/* Change background color of buttons on hover */
-/* .tab button:hover {
-    background-color: #ddd;
-} */
-
-/* Create an active/current tablink class */
-/* .tab button.active {
-    background-color: #ccc;
-} */
-
-/* Style the tab content */
-.tabcontent {
-    /* display: none; */
-    /* padding: 6px 12px; */
-    border: 1px solid #ccc;
-    border-top: none;
+/* ใบเบิก etc */
+.section-description {
+    font-size: 1rem;
+    text-align: left;
+    display: inline-block;
+    width: 100%;
+    padding: 0.25rem;
+    /* margin-right: -50%; */
+    background-color: rgb(195, 194, 194);
 }
+
+.section-description .dropbtn {
+    float:right;
+    height: 30px;
+    width:  30px;
+}
+
+.section-description-secondary{
+    text-align: left;
+    padding-left: 2rem;
+    color: black;
+}
+
+.section-description-tertiary {
+    /* text-align: left; */
+    padding: 1rem;
+    color: rgb(121, 121, 121);
+    font-size: 0.75rem;
+    text-align: left;
+}
+
+.equipment-table-big thead tr {
+    border-top: 1px solid rgb(0, 68, 253);
+}
+
+.equipment-table-big  {
+    min-width: 100%;
+}
+
+.equipment-table-big thead tr th{
+    color: rgb(0, 68, 253);
+}
+
+.equipment-table-big tbody tr td {
+    color: rgb(73, 73, 73);
+}
+
+
+.equipment-table-big thead tr th,
+.equipment-table-big tbody tr td {
+    padding-top: 1rem;
+}
+
+.equipment-table-big thead tr th:first-child,
+.equipment-table-big tbody tr td:first-child {
+    text-align: left;
+}
+
+.fourth-tab tr th,
+.fourth-tab tr td{
+    border: 1px solid rgb(209, 207, 207);
+    padding:1rem;
+    text-align: center;
+}
+
+.fourth-tab thead tr th:first-child,
+.fourth-tab tbody tr td:first-child
+{
+    text-align: center;
+}
+
+.fourth-tab  thead tr td {
+    
+}
+
+
+.fourth-tab thead tr th {
+    background-color: rgb(228, 226, 226);
+}
+
+
