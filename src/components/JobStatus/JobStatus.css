@@ -240,7 +240,7 @@ ul li:nth-child(2) .iconStatus::after{
 
 .handler-content-info p {
     color: black;
-    width: 210px;
+    width: 40%;
     height: 25px;
     padding: 5px;
     margin: 2.5px;
