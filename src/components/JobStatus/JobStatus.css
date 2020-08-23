@@ -3,7 +3,7 @@ body {
     resize: none;
 }
 
-
+/*---------------------------- Job Status ---------------------------- */
 
 .jobstatuscontainer{
     display: grid;
@@ -95,55 +95,43 @@ ul li:nth-child(2) .iconStatus::after{
 }
 
 
-/* Customer Information */
+/*---------------------------- Customer Information ---------------------------- */
 
 .customer-info-container{
    grid-column: 9 / 13;
-   margin: 1rem 0.5rem -1rem 1rem;
-   overflow: hidden;
-   /* margin-left: 4rem; */
-
-    box-shadow:  5px 5px 15px 15px rgba(255, 255, 255, 0.1),
+   margin: 0.5rem;
+   overflow:auto;
+   box-shadow:  5px 5px 15px 15px rgba(255, 255, 255, 0.1),
                  5px  5px 15px 15px rgba(0,0,0,0.1);
 }
 
-.title-container {
-    width: 215px;
-	height: 100px; 
-    float:left; /** add this **/ 
-    /* border: 5px solid lime;  */
-	margin: 10px 5px auto 5px; 
-    overflow: hidden; 
+.customer-info-top-section {
+    height: 40%;
+}
 
+.title-container {
+	margin: 1rem;
+    display:inline-block;
+    float:left;
 }
 
 .title {   
     font-size: 1rem;
-    text-align: left;
-    padding-top: 2rem;
-    padding-left: 2rem;
-    line-height: 0.1rem;
     color: rgb(83, 82, 82);
 
 }
 
 .company-title {
     font-size: 0.8rem;
-    text-align: left;
-    padding-top: 1rem;
-    padding-left: 2rem;
 }
 
 .buttonJob {	
-    width: 200px; 
-	height: 100px; 
-    float:left; /** add this! **/ 
-    overflow: hidden; 
-	margin: 40px 10px auto 5px;  
+    display: inline-block;
+    float:right;
+    margin: 2rem; 
 }
 
 /* Dropdown button */
-
 
 .dropbtn {
     font-size: 16px;
@@ -170,75 +158,69 @@ ul li:nth-child(2) .iconStatus::after{
 }
 
 .dropdown:hover .dropdown-content {
-   padding:0rem 0rem 0rem 0rem;
+   padding:0rem;
    display: block;
    left: -7.8rem;
 }
 
-.order-type-section {
-    margin: 1rem 0.8rem 0.25rem 0.4rem;
-    border-bottom: 1px solid rgb(194, 193, 193);
-}
-
-.order-type,
-.order-type-description {
-    font-size: 0.5rem;
+.content-info{
+    font-size: 0.75rem;
+    margin: 0.5rem;
     display: inline-block;
 }
 
-.order-type {
-    padding-top: 0.5rem;
-    padding-left: 0.2rem;
-    float: left;
+.content-info p{
     color: black;
-}
-
-.content-info{
-    width: 430px;
-    height: auto;
-    float:left;
-    /* border: 5px solid lime;  */
-    margin: -40px 5px 5px 5px;
-    overflow: hidden;
-    font-size: 0.5rem;
-    border-bottom: 1px solid rgb(182, 182, 182);
-}
-
-.content-info div p{
-    color: black;
-    width: 100px; 
-	height: 25px; 
+    width: 25%; 
+	height: 20px; 
     float:left; 
-    overflow: hidden; 
-    margin: 5px auto auto 5px;  
-    /* border: 5px solid yellow; */
     text-align: left;
-}
+} 
 
 .content-info div p:nth-child(2){
     color: grey;
 }
 
+.order-type-section {
+    margin: 0rem;
+    padding-top: 1rem;
+    font-size: 0.75rem;
+}
+
+.order-type-section .order-type {
+
+    display: inline-block;
+    float:left;
+    margin-left: 1rem;
+}
+
+
 /* Job Date Table */
+
+
 .content-table {
-  font-size: 0.5rem;
-  min-width: 400px;
-  height:auto;
-  overflow: hidden;
+  font-size: 0.75rem;
+  width: 100%;
+  height: 100%;
+  margin-top: 1rem;
   margin-bottom: 1rem;
 }
 
 .content-table thead tr {
+    margin: 10rem;
   text-align: center;
   font-weight: bold;
+
 }
 
 .content-table th,
 .content-table td {
-    padding-top: 0.25rem;
+    /* padding-top: 0.25rem;
     padding-left: 2.75rem;
-    padding-bottom: 1rem;
+    padding-bottom: 1rem; */
 }
+
+/* ---------------------- Third - Tap ----------------------  */
 
  .table-div {
     height: auto;

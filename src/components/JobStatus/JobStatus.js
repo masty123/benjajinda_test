@@ -57,91 +57,96 @@ class JobStatus extends Component {
                         </ul> 
                     </div>
 
+
+
                     <div className="customer-info-container">
+                        <div className="customer-info-top-section">
+                            <div className="title-container">
+                                <p className="title">Customer Information</p>
+                                <p className="company-title">บริษัท ไทย-โกเบ เวลติ้ง จำกัด</p>                       
+                            </div>
 
-                        <div className="title-container">
-                            <p className="title">Customer Information</p>
-                            <p className="company-title">บริษัท ไทย-โกเบ เวลติ้ง จำกัด</p>
+                            
+                            <div className="buttonJob">
+                                        <Button color = "warning" > Approve Job </Button>{' '}
+                                    <div className="dropdown">
+                                        <Button color = "warning" className="dropbtn"> <i class="fas fa-angle-down"></i></Button>{' '}
+                                        <div className="dropdown-content">
+                                            <Button color="danger" className="rejectButton">Reject</Button>{' '}
+                                        </div>
+                                    </div>         
+                            </div>
                         </div>
-
-                
-                         <div className="buttonJob">
-                                <Button color = "warning" > Approve Job </Button>{' '}
-                            <div className="dropdown">
-                                <Button color = "warning" className="dropbtn"> <i class="fas fa-angle-down"></i></Button>{' '}
-                                <div className="dropdown-content">
-                                    <Button color="danger" className="rejectButton">Reject</Button>{' '}
-                                </div>
-                            </div>         
-                        </div>
-
+                    
                         <div className="content-info">
+                                
+                                {/* <div> */}
+                                    <p>CR No.</p>
+                                    <p>840499-5614135</p>
+                                {/* </div> */}
 
-                            <div>
-                                <p>CR No.</p>
-                                <p>840499-5614135</p>
+                                {/* <div> */}
+                                    <p>Job No.</p>
+                                    <p>NS-840499564135</p>
+                                {/* </div> */}
+
+                                {/* <div> */}
+                                    <p>SAP No.</p>
+                                    <p>7201007178</p>
+                                {/* </div> */}
+
+                                {/* <div> */}
+                                    <p>Customer</p>
+                                    <p>New</p>
+                                {/* </div> */}
+
+                                {/* <div> */}
+                                    <p>SAP BBTEC</p>
+                                    <p></p>
+                                {/* </div> */}
+
+                                {/* <div> */}
+                                    <p>SAP UIH</p>
+                                    <p></p>
+                                {/* </div> */}
+
+                                {/* <div> */}
+                                    <p>Type</p>
+                                    <p>NS</p>
+                                {/* </div> */}
+
+                                {/* <div> */}
+                                    <p>Service Type</p>
+                                    <p>MPLS - Fullmesh</p>
+                                {/* </div>  */}
                             </div>
 
-                             <div>
-                                <p>Job No.</p>
-                                <p>NS-840499564135</p>
+                            <div className="order-type-section">
+                                <p className="order-type">Order Type</p>
+                                <p className="order-type-description"> IA02 Access Change Service </p>
                             </div>
 
-                            <div>
-                                <p>SAP No.</p>
-                                <p>7201007178</p>
-                            </div>
-
-                            <div>
-                                <p>Customer</p>
-                                <p>New</p>
-                            </div>
-
-                             <div>
-                                <p>SAP BBTEC</p>
-                                <p></p>
-                            </div>
-
-                             <div>
-                                <p>SAP UIH</p>
-                                <p></p>
-                            </div>
-
-                            <div>
-                                <p>Type</p>
-                                <p>NS</p>
-                            </div>
-
-                            <div>
-                                <p>Service Type</p>
-                                <p>MPLS - Fullmesh</p>
-                            </div>
-                        </div>
-
-                        <div className="order-type-section">
-                            <p className="order-type">Order Type</p>
-                            <p className="order-type-description"> IA02 Access Change Service </p>
-                        </div>
-
-                        <table class="content-table">
-                            <thead>
-                                <tr>
-                                    <th>Start Date</th>
-                                    <th>Due Date</th>
-                                    <th>IC Date</th>
-                                    <th>Done Date</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>11/11/2019</td>
-                                    <td>18/11/2019</td>
-                                    <td>22/11/2019</td>
-                                    <td>22/11/2019</td>
-                                </tr>
-                            </tbody>
-                        </table>                
-                    </div>
+                   
+                            <table className="content-table">
+                                <thead>
+                                    <tr>
+                                        <th>Start Date</th>
+                                        <th>Due Date</th>
+                                        <th>IC Date</th>
+                                        <th>Done Date</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>11/11/2019</td>
+                                        <td>18/11/2019</td>
+                                        <td>22/11/2019</td>
+                                        <td>22/11/2019</td>
+                                    </tr>
+                                </tbody>
+                            </table>                
+                      
+                </div>
 
                      <div className="customer-info-container">
 
