@@ -8,12 +8,15 @@ class Header extends Component {
     render() {
         return (
             <div className="job-header-container">
+
+            <Button color="link" className="back-button">Back</Button>  
+
         
                  <div className="job-container">
                 
-                <Button color="link" className="back-button">Back</Button>  
                 
                         <div className="job-info">
+
                                 <div className = "job-info-number-description" >
                                     Job No.
                                 </div>
@@ -27,24 +30,27 @@ class Header extends Component {
 
                                 < div className = "job-secondary-stat credit-number" >
                                     <div className="description">Cr No.</div>
-                                     < div className = "cr-no" >840499 - 564135 </div>  
+                                     < div className = "cr-no-description" >840499 - 564135 </div>  
                                 </div>
 
 
                                 <div className="job-secondary-stat">
                                     <div className="description">Area</div>
-                                     < div className = "cr-no" >I.BKK3 </div>  
+                                     < div className = "area-description" >I.BKK3 </div>  
                                 </div>
 
 
                                 < div className = "job-secondary-stat" >
                                     <div className="description">Type</div>
-                                     < div className = "cr-no" >OSP</div>  
+                                     < div className = "type-des" >OSP</div>  
                                 </div>
 
-                                < div className = "job-secondary-stat" >
+                                < div className = "job-secondary-stat last-child" >
                                     <div className="description">Status</div>
-                                     < div className = "cr-no" > กำลังดำเนินการ </div>  
+                                     < div className = "status-description" > 
+                                        กำลังดำเนินการ
+                                        <Button variant="outline-primary" size="sm" className="statusbutton"><i class="fas fa-angle-down"></i></Button>{' '}
+                                     </div>  
                                 </div>
                  
                 
@@ -52,7 +58,7 @@ class Header extends Component {
                 </div>
 
                   <div className="job-header-list">
-                            < div className = "job-info-number-description" >
+                            < div className = "job-info-number-description rightside" >
                                     Job No.
                                 </div>
 
