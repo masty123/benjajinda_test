@@ -144,22 +144,23 @@ class JobStatus extends Component {
                                         <td>22/11/2019</td>
                                     </tr>
                                 </tbody>
-                            </table>                
-                      
-                </div>
+                            </table>                    
+                    </div>
 
                      <div className="customer-info-container">
+                    
+                        <div className="customer-info-top-section">
+                            <div className="title-container">
+                                    <p className="title">History Log</p>
+                                </div>
 
-
-                        <div className="title-container">
-                            <p className="title">History Log</p>
-                        </div>
-
-                         <div className="buttonJob secondary-window">
-                            <div className="dropdown">
-                                <Button color = "warning" className="dropbtn"> <i class="fas fa-angle-down"></i></Button>{' '}
-                            </div>    
-                        </div>        
+                                <div className="buttonJob">
+                                    <div className="dropdown">
+                                        <Button color = "warning" className="dropbtn"> <i class="fas fa-angle-down"></i></Button>{' '}
+                                    </div>    
+                                </div>        
+                         </div>
+                       
 
                          <div className="handler-content-info">
 
@@ -175,14 +176,12 @@ class JobStatus extends Component {
 
                             <div className="handler-role">
                                 <p className="handler-role-description">(Coordinator)/Coordinator BKK</p>
+                                <p className="handler-username"></p>
                             </div>
 
                             <div>
+                                <p>1237201007178 / 123123123 </p>
                                 <p></p>
-                            </div>
-
-                            <div>
-                                <p> 1237201007178 / 123123123 </p>
                             </div>
                         </div>
                     </div>
