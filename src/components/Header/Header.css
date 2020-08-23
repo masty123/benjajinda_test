@@ -2,7 +2,7 @@
     box-sizing: border-box;
     /* resize: both; */
     /* overflow: auto; */
-    /* border: 1px solid pink; */
+    border: 1px solid pink;
 }
 .job-header-container{
     display: grid;
@@ -36,9 +36,11 @@
     height: 300px;
     grid-column: 1 / 8;
     position: relative;
+    height: 250px;
+
 }
 
-/* Left Menu*/
+/* ---------------------------- Left Menu  ----------------------------*/
 
 .job-info {
     color: #fff; 
@@ -93,7 +95,6 @@
 
 .statusbutton {
     border-radius: 50%;
-
 }
 
 
@@ -102,10 +103,11 @@
 
 
 
-/* Right Menu list */
+/*  ---------------------------- Right Menu list  ---------------------------- */
 .job-header-list{
     grid-column: 8 / 13;
     margin: 3.5rem;
+    margin-top: 1rem;
     margin-left: 8rem;
 }
 
@@ -114,7 +116,7 @@
 }
 
 .rightside {
-    /* margin-left: 1.3rem; */
+    margin-left: 1.3rem;
 }
 
 
@@ -123,7 +125,7 @@
 }
 
 .job-list {
-    width: 400px;
+    /* width: 400px; */
     height: 200px;
     padding: 10px;
     overflow-y: auto;
