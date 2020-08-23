@@ -238,11 +238,11 @@ class JobStatus extends Component {
                                         </div>
                                 </div>
 
-                                {/* <div className="table-div">
+                                <div className="table-div">
                                         <table class="content-table leftRow-big">
                                                 <thead>
                                                     <tr>
-                                                        <th>-</th>
+                                                        <th></th>
                                                         <th>Customer Node</th>
                                                         <th>Network Node</th>
                                                     </tr>
@@ -330,9 +330,10 @@ class JobStatus extends Component {
 
                                 <div className="section">
                                    <p className="section-description"> 
-                                   รายละเอียด NMC (NON-POTS) 
+                                     รายละเอียด NMC (NON-POTS) 
                                      <Button color = "warning" className="dropbtn"> <i class="fas fa-angle-down"></i></Button>{' '}
                                    </p>
+
                                     <p className="section-description-tertiary">
                                         Lorem ipsum dolor sit amet, consectetur adipiscing 
                                         elit, sed do eiusmod tempor incididunt ut labore 
@@ -407,7 +408,7 @@ class JobStatus extends Component {
                                                     </tr>
                                                 </tbody>
                                          </table>
-                                </div> */}
+                                </div>
                            
                         </TabPanel>
 
@@ -424,12 +425,19 @@ class JobStatus extends Component {
                                                 <span class="file"></span>
                                             </span>
                                           </li>
-                                        </div>
+                                        </div>    
+                                    
                                     </div>
 
                                     <div className="upload-button-container">
                                              <Button color="warning" class="upload-button">+ Upload</Button>{' '}
-                                    </div>
+                                    </div> 
+
+                                  
+
+                                 
+
+                               
                                
                                 </div>
 
@@ -437,7 +445,7 @@ class JobStatus extends Component {
 
                                         <table class="content-table leftRow-big second-section-left">
                                                 <thead>
-                                                    <tr className="table-header">
+                                                    <tr>
                                                         <th>บันทึกผลตรวจรับการติดตั้ง Fiber</th>
                                                         <th></th>
                                                     </tr>
@@ -516,7 +524,7 @@ class JobStatus extends Component {
 
                                         <table class="content-table leftRow-big second-section-left">
                                                 <thead>
-                                                    <tr className="table-header">
+                                                    <tr>
                                                         <th>Draw Free Hand</th>
                                                         <th></th>
                                                     </tr>

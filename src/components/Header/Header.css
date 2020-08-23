@@ -2,7 +2,7 @@
     box-sizing: border-box;
     /* resize: both; */
     /* overflow: auto; */
-    border: 1px solid pink;
+    /* border: 1px solid red; */
 }
 .job-header-container{
     display: grid;
@@ -94,7 +94,9 @@
 
 
 .statusbutton {
-    border-radius: 50%;
+    color: white;
+    background-color: transparent;
+    border: transparent;
 }
 
 
