@@ -188,10 +188,10 @@ class JobStatus extends Component {
 
                      <Tabs className="tab">
                         <TabList className="tabList">
-                            <Tab className="tabtitle">รายละเอียดลูกค้า</Tab>          
-                            <Tab className="tabtitle">รายละเอียดการติดตั้ง</Tab>
-                            <Tab className="tabtitle">รายละเอียด Network</Tab>
-                            <Tab className="tabtitle">ตรวจรับงาน</Tab>
+                            <Tab className="tab-title">รายละเอียดลูกค้า</Tab>          
+                            <Tab className="tab-title">รายละเอียดการติดตั้ง</Tab>
+                            <Tab className="tab-title">รายละเอียด Network</Tab>
+                            <Tab className="tab-title">ตรวจรับงาน</Tab>
                         </TabList>
 
                         <TabPanel>
@@ -215,13 +215,16 @@ class JobStatus extends Component {
                                                 <p>Config ต้นทาง</p>
                                             </div>
                                             <div className="config-right">
-                                                <p> </p>
+                                                <p> - </p>
                                             </div>
                                         </div>
 
                                         {/* Line Thingy */}
-                                        <div className="connection-line">
-                                            <p>*-----*</p>
+
+                                        <div className="config-start">
+                                            <div className="connection-line">
+                                                <p>*-----*</p>
+                                            </div>
                                         </div>
 
                                         {/* Right Side */}
@@ -235,7 +238,7 @@ class JobStatus extends Component {
                                         </div>
                                 </div>
 
-                                <div className="table-div">
+                                {/* <div className="table-div">
                                         <table class="content-table leftRow-big">
                                                 <thead>
                                                     <tr>
@@ -404,7 +407,7 @@ class JobStatus extends Component {
                                                     </tr>
                                                 </tbody>
                                          </table>
-                                </div>
+                                </div> */}
                            
                         </TabPanel>
 
